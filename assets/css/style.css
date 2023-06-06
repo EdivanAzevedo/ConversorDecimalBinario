@@ -17,8 +17,7 @@ body {
     align-items: center;
     justify-content: center;
     background: var(--azul);
-    transition: all 0.5s ease;
-    color: white;
+    color: white; 
 }
 
 .container {
@@ -33,7 +32,7 @@ body {
     background-color: #aba8b288;
     box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.226);
     border-radius: 20px;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease
 }
 
 .container:hover {
@@ -64,4 +63,13 @@ input {
     width: 100%;
     padding: 10px;
     border-radius: 20px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s ease;
+        transition-timing-function: ease; 
+    }
 }

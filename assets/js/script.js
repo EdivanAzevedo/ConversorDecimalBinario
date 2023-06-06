@@ -18,6 +18,7 @@ binInp.addEventListener("input", () => {
     let binValue = binInp.value;
     if (validadorBin(binValue)) {
         decInp.value = parseInt(binValue, 2);
+        error.textContent = "";
     } else {
         error.textContent = "Por favor, insira um número binário válido";
     }
